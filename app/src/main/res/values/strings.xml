@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+
+    <!-- PokemonListFragment -->
+    <string name="pokemon_list_total">Pokemon total: %s</string>
+    <string name="pokemon_list_no_data_message">No pokemon found</string>
+
+    <!-- PokemonDetailsFragment -->
+    <string name="pokemon_details_type">Type</string>
+    <string name="pokemon_details_types">Types</string>
+    <string name="pokemon_details_stats">Stats</string>
+    <string name="pokemon_details_no_data_message">Unable to retrieve pokemon data</string>
+
+    <!-- NoDataLayout -->
+    <string name="no_data_default_message">No data retrieved</string>
+
+    <!-- ItemPaging -->
+    <string name="paging_error_message">An error occurred</string>
+    <string name="paging_retry">Retry</string>
+
+</resources>

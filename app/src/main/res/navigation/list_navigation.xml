@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_navigation"
+    app:startDestination="@id/pokemonListFragment">
+
+    <fragment
+        android:id="@+id/pokemonListFragment"
+        android:name="com.test.pokedex.ui.view.PokemonListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_pokemon_list">
+
+        <action
+            android:id="@+id/action_listFragment_to_detailActivity"
+            app:destination="@id/pokemonDetailsActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+            <argument
+                android:name="pokemonName"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <activity
+        android:id="@+id/pokemonListActivity"
+        android:name="com.test.pokedex.ui.view.PokemonListActivity"
+        android:label="activity_pokemon_list"
+        tools:layout="@layout/activity_pokemon_list" />
+
+    <activity
+        android:id="@+id/pokemonDetailsActivity"
+        android:name="com.test.pokedex.ui.view.PokemonDetailsActivity"
+        android:label="activity_pokemon_details"
+        tools:layout="@layout/activity_pokemon_details" />
+
+</navigation>
